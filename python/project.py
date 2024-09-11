@@ -120,16 +120,84 @@ for i in range(4):
   t.left(90) # Turn turtle by 90 degree
 
 
+import math
+
+radius = float (input("enter the radius of a circle:"))
+
+circumference= 2*math.pi* radius
+print("circumference of a circle is :%.2f "% circumference)
+
+import os
+
+shutdown = input("do you wish to shutdown your computer ? (yes or no):")
+
+if shutdown == 'no':
+ exit()
+else:
+  os.system("shutdown /s /t 1")
+
+price = 2.50
+#define a function to calculate the difference between the amount given and price mentioned
+def calculate_change(amount_given):
+	return amount_given - price
+
+c = calculate_change(4.00)
+print("Change the customer is due", c)
 
 
+def enterage(age):
+
+#define function to take input as natural number
+    if age < 0:  #condition 1
+        raise ValueError("Only positive integers are allowed")
+    if age % 2 == 0: #condition 2
+        print("age is even")
+    else:
+        print("age is odd")
+
+try: 
+    num = int(input("Enter your age: "))
+    enterage(num)
+
+#handles value error exception    
+except ValueError:
+    print("Only positive integers are allowed")
+	
+except:
+    print("something is wrong")
 
 
+#importing math
+#using maths function for calculating trignometric values
+import math 
+
+a = math.sin(0.5)
+b = math.cos(0.5)
+c = math.tan(0.5)
+
+print("value of sin(0.5)= ",a)
+print("value of cos(0.5)= ",b)
+print("value of tan(0.5)= ",c)
 
 
+# importing calendar module
+import calendar
+
+yy = 2021 # year
+mm = 12    # month
+
+# To take month and year input from the user
+# yy = int(input("Enter year: "))
+# mm = int(input("Enter month: "))
+
+# display the calendar
+print(calendar.month(yy, mm))
 
 
+Find Symmetric Difference for :
 
-
+A. Set1 = {'blue', 'green'} Set2 = {'blue', 'yellow'}
+B. Set1 = {1, 2, 3, 4, 5} Set2 = {1, 5, 6, 7, 8, 9}
 
 
 
